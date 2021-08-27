@@ -27,14 +27,6 @@ img{
 Fonts/Colors
 =======================
 */
-img{
-/* Dark Grayish Magenta: */ color: hsl(303, 10%, 53%);
-/* Light Grayish Magenta: */ color: hsl(300, 24%, 96%);
-/* White: */ color: hsl(0, 0%, 100%);
-
-/* Very Dark Magenta: */ color: hsl(300, 43%, 22%);
-/* Soft Pink: */ color: hsl(333, 80%, 67%);
-}
 
 .info__title,
 .ratings__source{
@@ -150,10 +142,6 @@ Layout
 }
 
 @media (min-width: 1000px){
-    
-    body{
-        height: 100vh;
-    }
 
     .bg-pattern--top{
         top: -500px;
