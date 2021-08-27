@@ -1,6 +1,153 @@
+/* 
+=======================
+Global Styles
+=======================
+*/
+
 body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
     font-family: 'Spartan', sans-serif;
+    font-size: .9375rem;
+    font-weight: 500;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(303, 10%, 53%);
 }
+
+img{
+    display: inline-block;
+}
+
+/* 
+=======================
+Fonts/Colors
+=======================
+*/
+img{
+/* Dark Grayish Magenta: */ color: hsl(303, 10%, 53%);
+/* Light Grayish Magenta: */ color: hsl(300, 24%, 96%);
+/* White: */ color: hsl(0, 0%, 100%);
+
+/* Very Dark Magenta: */ color: hsl(300, 43%, 22%);
+/* Soft Pink: */ color: hsl(333, 80%, 67%);
+}
+
+.info__title,
+.ratings__source{
+    color: hsl(300, 43%, 22%);
+}
+
+.info__title,
+.ratings__source,
+.buyer__info__name{
+    font-weight: 700;
+}
+
+.info__text{
+    font-size: .88rem;
+    font-weight: 400;
+}
+
+.buyer__info__name,
+.review{
+   color: hsl(0, 0%, 100%);
+}
+
+.buyer__info__verified{
+    font-weight: 400;
+    color: hsl(333, 80%, 67%);
+}
+
+.review{
+    font-size: .77rem;
+}
+
+/* 
+=======================
+Layout
+=======================
+*/
+
+.bg-pattern{
+    position: absolute;
+}
+
+.bg-pattern--top{
+    top: 0;
+    left: 0;
+}
+
+.bg-pattern--bottom{
+    bottom: 0;
+    right: 0;
+}
+
+.container{
+    position: relative;
+    margin: 80px 0;
+    width: 85%;
+    text-align: center;
+}
+
+.info__title{
+    margin: 0 0 .7em;
+}
+
+.info__text{
+    margin-bottom: 3em;
+}
+
+.info__text,
+.review{
+    line-height: 1.5em;
+}
+
+.ratings-container{
+    margin-bottom: 3em;
+}
+
+.ratings{
+    margin-bottom: 1em;
+    padding: 1em 0 .2em;
+    background-color: hsl(300, 24%, 96%);
+}
+
+.buyer-card{
+    margin-bottom: 1em;
+    padding: 2em;
+    text-align: left;
+    background-color: hsl(300, 43%, 22%);
+}
+
+.buyer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.buyer__profilepic{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.buyer__info__name,
+.buyer__info__verified{
+    margin: .25em 1em;
+}
+
+.ratings,
+.buyer-card{
+    border-radius: 10px;
+}
+
+/* 
+=======================
+Attribution
+=======================
+*/
 
 .attribution {
     font-size: 11px;
@@ -8,5 +155,11 @@ body{
   }
   
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    color: hsl(300, 43%, 22%);
   }
+
+.attribution a:hover, a:focus, a:active{
+    text-decoration: underline;
+    outline: none;
+}
