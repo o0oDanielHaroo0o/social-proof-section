@@ -15,7 +15,6 @@ body{
     font-weight: 500;
     background-color: hsl(0, 0%, 100%);
     color: hsl(303, 10%, 53%);
-    overflow: hidden;
 }
 
 img{
@@ -142,6 +141,10 @@ Layout
 }
 
 @media (min-width: 1000px){
+
+    body{
+        overflow: hidden;
+    }
 
     .bg-pattern--top{
         top: -500px;
